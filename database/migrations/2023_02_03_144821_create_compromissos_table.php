@@ -21,7 +21,7 @@ return new class extends Migration
             $table->time('horaFim');
             $table->string('local', 50);
             $table->string('status', 25);
-            $table->string('observacoes', 120);
+            $table->string('observacoes', 120)->nullable();
             $table->timestamps();
         });
     }
